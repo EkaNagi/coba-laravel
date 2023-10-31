@@ -15,24 +15,24 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // \App\Models\User::factory(10)->create();
-
         // \App\Models\User::factory()->create([
         //     'name' => 'Test User',
         //     'email' => 'test@example.com',
         // ]);
 
-        User::create([
-            'name' => 'Tresna Eka Widiana',
-            'email' => '193040071@mail.unpas.ac.id',
-            'password' => bcrypt('12345')
-        ]);
+        // User::create([
+        //     'name' => 'Tresna Eka Widiana',
+        //     'email' => '193040071@mail.unpas.ac.id',
+        //     'password' => bcrypt('12345')
+        // ]);
 
-        User::create([
-            'name' => 'Dian Nuryana',
-            'email' => '193040045@mail.unpas.ac.id',
-            'password' => bcrypt('12345')
-        ]);
+        // User::create([
+        //     'name' => 'Dian Nuryana',
+        //     'email' => '193040045@mail.unpas.ac.id',
+        //     'password' => bcrypt('12345')
+        // ]);
+
+        User::factory(3)->create();
 
         Category::create([
             'name' => 'Web Programming',
@@ -44,40 +44,42 @@ class DatabaseSeeder extends Seeder
             'slug' => 'personal'
         ]);
 
-        Post::create([
-            'title' => 'Judul Pertama',
-            'slug' => 'judul-pertama',
-            'excerpt' => 'Lorem yang sedikit',
-            'body' => 'Lorem yang buanyak',
-            'category_id' => 1,
-            'user_id' => 1
-        ]);
+        Post::factory(20)->create();
 
-        Post::create([
-            'title' => 'Judul Kedua',
-            'slug' => 'judul-kedua',
-            'excerpt' => 'Lorem yang sedikit',
-            'body' => 'Lorem yang buanyak',
-            'category_id' => 2,
-            'user_id' => 2
-        ]);
+        // Post::create([
+        //     'title' => 'Judul Pertama',
+        //     'slug' => 'judul-pertama',
+        //     'excerpt' => 'Lorem yang sedikit',
+        //     'body' => 'Lorem yang buanyak',
+        //     'category_id' => 1,
+        //     'user_id' => 1
+        // ]);
 
-        Post::create([
-            'title' => 'Judul Ketiga',
-            'slug' => 'judul-ketiga',
-            'excerpt' => 'Lorem yang sedikit',
-            'body' => 'Lorem yang buanyak',
-            'category_id' => 1,
-            'user_id' => 2
-        ]);
+        // Post::create([
+        //     'title' => 'Judul Kedua',
+        //     'slug' => 'judul-kedua',
+        //     'excerpt' => 'Lorem yang sedikit',
+        //     'body' => 'Lorem yang buanyak',
+        //     'category_id' => 2,
+        //     'user_id' => 2
+        // ]);
 
-        Post::create([
-            'title' => 'Judul Keempat',
-            'slug' => 'judul-keempat',
-            'excerpt' => 'Lorem yang sedikit',
-            'body' => 'Lorem yang buanyak',
-            'category_id' => 2,
-            'user_id' => 1
-        ]);
+        // Post::create([
+        //     'title' => 'Judul Ketiga',
+        //     'slug' => 'judul-ketiga',
+        //     'excerpt' => 'Lorem yang sedikit',
+        //     'body' => 'Lorem yang buanyak',
+        //     'category_id' => 1,
+        //     'user_id' => 2
+        // ]);
+
+        // Post::create([
+        //     'title' => 'Judul Keempat',
+        //     'slug' => 'judul-keempat',
+        //     'excerpt' => 'Lorem yang sedikit',
+        //     'body' => 'Lorem yang buanyak',
+        //     'category_id' => 2,
+        //     'user_id' => 1
+        // ]);
     }
 }
