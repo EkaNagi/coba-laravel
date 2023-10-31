@@ -5,11 +5,20 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
-          <a class="nav-link {{ ($title == "Home") ? 'active' : '' }}" aria-current="page" href="/">Home</a>
-          <a class="nav-link {{ ($title == "About") ? 'active' : '' }}" href="/about">About</a>
-          <a class="nav-link {{ ($title == "Posts") ? 'active' : '' }}" href="/posts">Blog</a>
-        </div>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link {{ ($title == "Home") ? 'active' : '' }}" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ ($title == "About") ? 'active' : '' }}" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ ($title == "Posts") ? 'active' : '' }}" href="/posts">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link {{ ($title == "Categories") ? 'active' : '' }}" href="/categories">Categories</a>
+                </li>
+            </ul>
       </div>
     </div>
   </nav>
